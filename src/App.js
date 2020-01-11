@@ -1,10 +1,13 @@
 import React from "react";
+
+import Blog from "./containers/Blog/Blog";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>TEST</h1>
+      <Blog />
     </div>
   );
 }
