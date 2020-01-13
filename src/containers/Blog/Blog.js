@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import axios from "axios";
 
 import Posts from "./Posts/Posts";
+import NewPost from "./NewPost/NewPost";
 import "./Blog.css";
 
 class Blog extends Component {
@@ -19,7 +20,9 @@ class Blog extends Component {
             </li>
           </ul>
         </header>
-        <Route path="/" exact render={() => <h1>Home</h1>} />
+        {/* <Route path="/" exact render={() => <h1>Home</h1>} /> */}
+        <Route path="/" exact component={Posts} />
+        <Route path="/new-post" component={NewPost} />
       </div>
     );
   }
