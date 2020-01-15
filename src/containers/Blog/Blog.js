@@ -4,6 +4,7 @@ import axios from "axios";
 
 import Posts from "./Posts/Posts";
 import NewPost from "./NewPost/NewPost";
+import FullPost from "./FullPost/FullPost";
 import "./Blog.css";
 
 class Blog extends Component {
@@ -33,6 +34,7 @@ class Blog extends Component {
         {/* <Route path="/" exact render={() => <h1>Home</h1>} /> */}
         <Route path="/" exact component={Posts} />
         <Route path="/new-post" component={NewPost} />
+        <Route path="/:id" exact component={FullPost} />
       </div>
     );
   }
