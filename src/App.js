@@ -7,6 +7,7 @@ import "./App.css";
 
 function App() {
   return (
+    // <BrowserRouter basename="/my-app">
     <BrowserRouter>
       <div className="App">
         <Blog />
