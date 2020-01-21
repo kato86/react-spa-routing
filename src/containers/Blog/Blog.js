@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, NavLink, Switch, Redirect } from "react-router-dom";
+import { Route, NavLink, Switch } from "react-router-dom";
 
 import Posts from "./Posts/Posts";
 import asyncComponent from "../../hoc/asyncComponent";
@@ -60,7 +60,6 @@ class Blog extends Component {
               </h1>
             )}
           />
-          {/* <Redirect from="/" to="/posts" /> */}
         </Switch>
       </div>
     );
