@@ -5,12 +5,6 @@ import Posts from "./Posts/Posts";
 import "./Blog.css";
 
 const NewPost = React.lazy(() => import("./NewPost/NewPost"));
-// import asyncComponent from "../../hoc/asyncComponent";
-// import NewPost from "./NewPost/NewPost";
-
-// const AsyncNewPost = asyncComponent(() => {
-//   return import("./NewPost/NewPost");
-// });
 
 class Blog extends Component {
   state = {
@@ -48,7 +42,6 @@ class Blog extends Component {
             </li>
           </ul>
         </header>
-        {/* <Route path="/" exact render={() => <h1>Home</h1>} /> */}
         <Switch>
           <Route
             path="/new-post"
